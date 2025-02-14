@@ -66,7 +66,7 @@ const Card1: React.FC<Card1Props> = ({ senderName, receiverName, note }) => {
             ))}
           </div>
           <div>
-            {showNote ? (
+            {showNote && !isNoteTooLong ? (
               <div
                 className={`${styles.message} ${
                   noteLines.length > 3 ? styles.fourPlus : styles.twoPlus
@@ -87,12 +87,12 @@ const Card1: React.FC<Card1Props> = ({ senderName, receiverName, note }) => {
         </div>
         <p className={styles.hover}>- hover over the text -</p>
         {/* to implement incase there is a message longer than how much we can fit */}
-        {/* {isNoteTooLong && (
+        {isNoteTooLong && (
           <div className={styles.longMessage}>
             <p className={styles.longMessageTitle}>Your Full Message:</p>
             <p className={styles.longMessageContent}>{note}</p>
           </div>
-        )} */}
+        )}
       </div>
     </div>
   );
