@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "start": "npx vite preview --host --port 3000",
+    "start": "npx vite preview --host --port $PORT",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
