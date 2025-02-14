@@ -5,6 +5,7 @@ const API_BASE_URL = 'https://valentinebe-rhfw8.ondigitalocean.app/api'; // Back
 // Insert a document into MongoDB
 export const insertDocument = async (data: { senderName: string; receiverName: string; note: string; cardNumber: string; receiverEmail: string; }) => {
   try {
+    console.log(API_BASE_URL);
     const response = await axios.post(`${API_BASE_URL}/documents`, data);
     console.log(response.data);
     return response.data; // Returns success message and inserted document ID
