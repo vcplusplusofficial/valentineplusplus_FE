@@ -1,9 +1,4 @@
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import DatabaseComponent from "./DatabaseComponent";
 import DynamicRouteHandler from "./DynamicRouteHandler";
 
@@ -30,16 +25,15 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="*" element={<DynamicRouteHandler />} />
         </Routes>
-
       </div>
     </Router>
   );
 }
 
 function Home() {
-  return ( 
-  <div> 
-     <nav>
+  return (
+    <div>
+      <nav>
         <ul>
           {/* <li>
             <Link to="/">Home</Link>
@@ -49,7 +43,7 @@ function Home() {
           </li> */}
         </ul>
       </nav>
-    <DatabaseComponent /> 
-  </div>
+      <DatabaseComponent />
+    </div>
   );
 }

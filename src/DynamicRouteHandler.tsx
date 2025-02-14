@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { insertDocument, fetchDocuments } from "./APIService";
+import { fetchDocuments } from "./APIService";
 import Card1 from "./cards/card1/Card1";
 import Card2 from "./cards/card2/Card2";
 import Card3 from "./cards/card3/Card3";
