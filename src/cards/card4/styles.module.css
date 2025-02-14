@@ -91,7 +91,7 @@
   flex-direction: row; /* Keep "To" and "From" in a row */
   justify-content: space-between;
   width: 500px;
-  gap: 12px;
+  gap: 25px;
   width: 500px; /* Matches the card width */
   text-align: center;
   font-size: 18px;
