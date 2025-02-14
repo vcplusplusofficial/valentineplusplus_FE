@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:3000/api'; // Backend URL
+const API_BASE_URL = 'https://valentinebe-rhfw8.ondigitalocean.app/api'; // Backend URL
 
 // Insert a document into MongoDB
 export const insertDocument = async (data: { senderName: string; receiverName: string; note: string; cardNumber: string; receiverEmail: string; }) => {
