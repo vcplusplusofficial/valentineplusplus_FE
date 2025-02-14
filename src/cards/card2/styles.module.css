@@ -282,11 +282,12 @@
 .to,
 .from {
   z-index: 10;
-  font-size: 18px;
+  font-size: 16px;
+  width: 300px;
   font-family: "Brush Script MT";
   position: absolute;
   color: #003049;
-  text-align: center;
+  text-align: start;
   line-height: 25px;
   left: -100px;
 }
