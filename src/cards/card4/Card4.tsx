@@ -8,8 +8,6 @@ interface Card4Props {
 }
 
 const Card4: React.FC<Card4Props> = ({ senderName, receiverName, note }) => {
-  const [isHovered, setIsHovered] = useState(false);
-
   return (
     <div className={styles.page}>
       <p className={styles.cite}>Base designed by @lenadesign5043</p>
